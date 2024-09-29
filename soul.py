@@ -32,7 +32,7 @@ cred = credentials.Certificate(firebase_credentials)
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-bot_token = '7825801271:AAHqKoXsB56mKvthbPP7-3nGeo0Ot-pqoS4'  # Replace with your bot token
+bot_token = '5558635892:AAEpI0iqMFqB-LRQ8BKzJEALoIdMZhOzJUA'  # Replace with your bot token
 proxy_api_url = 'https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http,socks4,socks5&timeout=500&country=all&ssl=all&anonymity=all'
 
 # Global iterator for proxies
@@ -79,7 +79,7 @@ def rotate_proxy(sent_message):
 
 bot = telebot.TeleBot(bot_token)
 
-ADMIN_ID = 786723480  # Replace with the actual admin's user ID
+ADMIN_ID = 1461755686  # Replace with the actual admin's user ID
 
 def generate_one_time_key():
     return secrets.token_urlsafe(16)
@@ -237,7 +237,7 @@ def handle_stop(message):
     bot.reply_to(message, "🛑 Attack stopped.")
 
 def handle_contact_admin(message):
-    bot.reply_to(message, f"📞 @SOULCRACKS: {ADMIN_ID}")
+    bot.reply_to(message, f"📞 @bgmiprince: {ADMIN_ID}")
 
 def handle_generate_key(message):
     if message.from_user.id == ADMIN_ID:
